@@ -1,0 +1,90 @@
+{
+  "manifest_version": 3,
+  "name": "Lingua Libre SignIt",
+  "version": "1.0.20",
+  "author": "Antoine '0x010C' Lamielle, Hugo Lopez",
+  "description": "SignIt translate a selected word into Sign Language videos.",
+  "homepage_url": "https://lingualibre.org",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "signit@lingualibre.fr"
+		}
+	},
+  "icons": {
+    "32": "icons/Lingualibre_SignIt-logo-no-text-square-32.png",
+    "48": "icons/Lingualibre_SignIt-logo-no-text-square-48.png",
+    "64": "icons/Lingualibre_SignIt-logo-no-text-square-64.png"
+  },
+  "action": {
+    "default_icon": "icons/Lingualibre_SignIt-logo-no-text-square-32.png",
+    "default_title": "Lingua Libre SignIt",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "webRequest",
+    "storage"
+  ],
+  "host_permissions":  [ "*://*/*" ],
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "css": [
+        "lib/oojs-ui-wikimediaui.min.css",
+        "content_scripts/signit.css"
+      ],
+      "js": [
+        "lib/browser-polyfill.min.js",
+        "lib/jquery.min.js",
+        "lib/banana-i18n.js",
+        "lib/oojs.jquery.min.js",
+        "lib/oojs-ui.min.js",
+        "lib/oojs-ui-wikimediaui.min.js",
+        "SignItVideosGallery.js",
+        "SignItCoreContent.js",
+        "content_scripts/signit.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://*.wikipedia.org/*"
+      ],
+      "css": [
+        "lib/oojs-ui-wikimediaui.min.css",
+        "content_scripts/wpintegration.css"
+      ],
+      "js": [
+        "lib/browser-polyfill.min.js",
+        "lib/jquery.min.js",
+        "lib/banana-i18n.js",
+        "lib/oojs.jquery.min.js",
+        "lib/oojs-ui.min.js",
+        "lib/oojs-ui-wikimediaui.min.js",
+        "SignItVideosGallery.js",
+        "content_scripts/wpintegration.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": [ "*://*/*" ]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      }
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self' data: https://lingualibre.org https://*.wikimedia.org https://*.wikipedia.org https://*.wiktionary.org; script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+  }
+}

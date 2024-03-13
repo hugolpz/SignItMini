@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selected Text Modal</title>
+  <style>
+    /* Add your CSS styles for the modal here */
+    #signit-modal {
+      font-family: Arial, sans-serif;
+    }
+
+    #signit-modal .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body id="signit-modal">
+  <div id="selectedTextModal" class="modal">
+    <h2>Selected Text</h2>
+    <div id="selectedTextContent"></div>
+    <button id="closeModal">Close</button>
+  </div>
+
+  <script src="modal.js"></script>
+</body>
+</html>

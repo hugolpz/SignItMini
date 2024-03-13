@@ -1,0 +1,21 @@
+{
+	"extends": "wikimedia",
+	"env": {
+		"es6": true,
+		"browser": true,
+		"jquery": true,
+		"qunit": true
+	},
+	"globals": {
+		"browser": false,
+		"mediaWiki": false,
+		"OO": false,
+		"wikibase": false,
+		"globeCoordinate": false,
+		"dataValues": false
+	},
+	"rules": {
+		"no-underscore-dangle": [ 0 ],
+		"no-implicit-globals": 0
+	}
+}

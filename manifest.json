@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "Lingua Libre SignIt",
+  "version": "3.0.1",
+  "author": "Antoine '0x010C' Lamielle, Hugo Lopez & co",
+  "description": "SignIt translate a selected word into Sign Language videos.",
+  "homepage_url": "https://lingualibre.org",
+  "icons": {
+    "32": "icons/Lingualibre_SignIt-logo-no-text-square-32.png",
+    "48": "icons/Lingualibre_SignIt-logo-no-text-square-48.png",
+    "64": "icons/Lingualibre_SignIt-logo-no-text-square-64.png"
+  },
+  "action": {
+    "default_popup": "popups/settings.html",
+    "default_title": "Lingua Libre SignIt",
+    "default_icon": "icons/Lingualibre_SignIt-logo-no-text-square-32.png"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "webRequest",
+    "storage"
+  ],
+  "host_permissions":  [ "*://*/*" ],
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "css": [
+        "popups/signit.css",
+        "popups/wpintegration.css"
+      ],
+      "js": [
+        "lib/browser-polyfill.min.js",
+        "lib/jquery.min.js",
+        "lib/banana-i18n.js",
+        "content.js",
+        "popups/settings.js",
+        "popups/modal.js",
+        "popups/integration.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*", 
+        "popups/modal.html",
+        "popups/settings.html"
+      ],
+      "matches": [ "<all_urls>" ]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      }
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self' data: https://lingualibre.org https://*.wikimedia.org https://*.wikipedia.org https://*.wiktionary.org; script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+  }
+}

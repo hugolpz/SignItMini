@@ -1,0 +1,52 @@
+{
+	"@metadata": {
+		"authors": [
+			"Antoine Lamielle",
+			"Hugo Lopez"
+		]
+	},
+	"si-addon-title": "Lingua Libre SignIt",
+	"si-addon-preload": "Fetching the list of all videos available on Lingua Libre.",
+
+	"si-overlay-coreContent-left-title":"Media:",
+	"si-overlay-coreContent-left-novideo":"This word hasn't been recorded yet,<br>but SignIt is crowd sourced project, you can contribute to it.",
+	"si-overlay-coreContent-left-contribute-label":"Contribute with Sign Language",
+	"si-overlay-coreContent-right-title":"Definitions:",
+	"si-overlay-coreContent-right-wikt-iso":"en",
+	"si-overlay-coreContent-right-wikt-section-id":"#English",
+	"si-overlay-coreContent-right-wikt-pointer":"see on Wiktionary",
+	"si-overlay-coreContent-right-error":"No definition found.",
+	
+	"si-popup-browse-title":"Browse",
+	"si-popup-browse-placeholder":"Search among $1 signs.",
+	"si-popup-browse-label":"Search",
+	"si-popup-browse-icon":"Start the search",
+	
+	"si-popup-history-title":"History",
+	"si-popup-history-noHistory":"It's empty",
+	
+	"si-popup-settings-title":"Settings",
+	"si-popup-settings-signlanguage":"Sign language:",
+	"si-popup-settings-signlanguage-help":"Change videos to another sign language.",
+	"si-popup-settings-signlanguage-dropdown":"Change videos language",
+	"si-popup-settings-uilanguage":"Interface language:",
+	"si-popup-settings-uilanguage-help":"Change the user interface's language.",
+	"si-popup-settings-uilanguage-dropdown":"Change interface language",
+
+	"si-popup-settings-history":"Length of the history:",
+	"si-popup-settings-history-help":"Set to 0 deactivates the history log",
+	"si-popup-settings-wpintegration":"Native integration with Wikipedia:",
+	"si-popup-settings-twospeed":"Play at normal speed, then at slow speed:",
+	"si-popup-settings-hint-icon": "Shortcut icon on selected text:",
+
+	"si-popup-settings-showvideo": "Show signed languages video panel:",
+
+	"si-popup-settings-choosepanels": "Panels to display:",
+	"si-popup-settings-choosepanels-definition": "Dictionary text only",
+	"si-popup-settings-choosepanels-both": "Both",
+	"si-popup-settings-choosepanels-video": "Signed videos only",
+
+	"si-popup-settings-enlighten":"Highlight available words:",
+
+	"si-videosGallery-video": "by {{link|$1|$2}} – Video $3 of $4"
+}

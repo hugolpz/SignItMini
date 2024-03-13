@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Пан Хаунд"
+		]
+	},
+	"si-addon-title": "Lingua Libre SignIt",
+	"si-addon-preload": "Отримання списку всіх відео, доступних на Lingua Libre.",
+	"si-overlay-coreContent-left-title": "Медіа:",
+	"si-overlay-coreContent-left-novideo": "Це слово ще не записано,<br> але SignIt – це проект, створений натовпом, ви можете зробити свій внесок у нього.",
+	"si-overlay-coreContent-left-contribute-label": "Зробіть внесок Мовою Жестів",
+	"si-overlay-coreContent-right-title": "Визначення:",
+	"si-overlay-coreContent-right-wikt-iso": "en",
+	"si-overlay-coreContent-right-wikt-section-id": "#Англійська",
+	"si-overlay-coreContent-right-wikt-pointer": "дивіться у Вікісловнику",
+	"si-overlay-coreContent-right-error": "Визначення не знайдено.",
+	"si-popup-browse-title": "Переглянути",
+	"si-popup-browse-placeholder": "Пошук серед знаків $1.",
+	"si-popup-browse-label": "Пошук",
+	"si-popup-browse-icon": "Почати пошук",
+	"si-popup-history-title": "Історія",
+	"si-popup-history-noHistory": "Він порожній",
+	"si-popup-settings-title": "Налаштування",
+	"si-popup-settings-signlanguage": "Мова жестів:",
+	"si-popup-settings-signlanguage-help": "Змініть відео на іншу мову жестів.",
+	"si-popup-settings-signlanguage-dropdown": "Змінити мову відео",
+	"si-popup-settings-uilanguage": "Мова інтерфейсу:",
+	"si-popup-settings-uilanguage-help": "Змініть мову інтерфейсу користувача.",
+	"si-popup-settings-uilanguage-dropdown": "Змінити мову інтерфейсу",
+	"si-popup-settings-history": "Тривалість історії:",
+	"si-popup-settings-history-help": "Якщо встановити значення 0, журнал історії буде деактивовано",
+	"si-popup-settings-wpintegration": "Нативна інтеграція з Вікіпедією:",
+	"si-popup-settings-twospeed": "Грайте на нормальній швидкості, потім на повільній:",
+	"si-popup-settings-hint-icon": "Ярлик на виділеному тексті:",
+	"si-popup-settings-enlighten": "Виділіть доступні слова:",
+	"si-videosGallery-video": "від {{link|$1|$2}} – Відео $3 із $4"
+}

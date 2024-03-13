@@ -1,0 +1,49 @@
+{
+    "name": "sign-it",
+    "version": "1.0.20",
+    "description": "SignIt translate a selected word into Sign Language videos",
+    "main": "background.js",
+    "dependencies": {
+      "banana-i18n": "^2.3.3",
+      "webextension-polyfill": "^0.9.0"
+    },
+    "devDependencies": {
+      "web-ext": "^7.0.0"
+    },
+    "scripts": {
+      "postinstall": "bin/build.sh",
+      "web-ext:build": "web-ext build --overwrite-dest   # zips all content but .git files",
+      "web-ext:test": "web-ext run --source-dir ./ --url=fr.wikipedia.org"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lingua-libre/SignIt.git"
+    },
+    "keywords": [
+      "sign",
+      "language",
+      "signlanguage",
+      "webextension",
+      "firefox",
+      "chrome",
+      "video"
+    ],
+    "author": {
+      "name": "Antoine '0x010C' Lamielle",
+      "email": "gh@0x010c.fr",
+      "url": "https://0x010c.fr"
+    },
+    "contributors": [
+      {
+        "name": "Hugo Lopez",
+        "email": "https://meta.wikimedia.org/wiki/Special:EmailUser/Yug",
+        "url": "https://meta.wikimedia.org/wiki/user:Yug"
+      }
+    ],
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/lingua-libre/SignIt/issues"
+    },
+    "homepage": "https://github.com/lingua-libre/SignIt#readme"
+  }
+  

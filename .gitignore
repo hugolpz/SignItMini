@@ -1,0 +1,14 @@
+node_modules/*
+package-lock.json
+*.swp
+lib/*.js
+lib/*.css
+lib/themes/wikimediaui/images/icons/*.svg
+videos/*
+web-ext-artifacts/*
+dist/*
+.accountRecovery.txt
+assets/
+doc/*.pdf
+icons/proper/
+tryV3/
